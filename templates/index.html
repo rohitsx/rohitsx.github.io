@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Bind - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #4caf50;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #888;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .contact a {
+      color: #4caf50;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .social-link {
+      color: #888;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      color: #4caf50;
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .project {
+      background: #242424;
+      border-radius: 8px;
+      padding: 25px;
+      border: 1px solid #333;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #4caf50;
+    }
+
+    .project-description {
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    /* Tech Stack */
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 15px 0;
+    }
+
+    .tech-tag {
+      background: #333;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    /* Project Links */
+    .project-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .project-link {
+      color: #4caf50;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 30px 0;
+      color: #888;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Rohit Bind</h1>
+      <p class="subtitle">Full Stack Developer</p>
+      <div class="contact">
+        <a href="mailto:rohitbindw@gmail.com">rohitbindw@gmail.com</a> • 
+        <a href="https://github.com/rohitsx" target="_blank">GitHub</a>
+      </div>
+      <div class="social-links">
+        <a href="https://twitter.com/rohitsxx" target="_blank" class="social-link" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://devrohit.tech" target="_blank" class="social-link" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/rohitsx" target="_blank" class="social-link" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="projects">
+      <!-- StreamSync -->
+      <div class="project">
+        <h3 class="project-title">StreamSync</h3>
+        <p class="project-description">
+          A Chrome extension for real-time voice interactions and dynamic live chat rendering for YouTube live streams.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Deno</span>
+          <span class="tech-tag">WebRTC</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">MongoDB</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Nginx</span>
+          <span class="tech-tag">Google Cloud</span>
+        </div>
+        <div class="project-links">
+          <a href="http://squadx.devrohit.tech/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+        </div>
+      </div>
+
+      <!-- SquadX -->
+      <div class="project">
+        <h3 class="project-title">SquadX</h3>
+        <p class="project-description">
+          A real-time video chat app enabling users to connect with strangers, supporting solo and squad (duo) modes.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express</span>
+          <span class="tech-tag">Socket.IO</span>
+          <span class="tech-tag">WebRTC</span>
+          <span class="tech-tag">Prisma ORM</span>
+          <span class="tech-tag">PostgreSQL</span>
+          <span class="tech-tag">Docker</span>
+          <span class="tech-tag">Nginx</span>
+        </div>
+        <div class="project-links">
+          <a href="https://streamsync.fun/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+          <a href="https://github.com/rohitsx/SquadX" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+
+      <!-- OmegleClone -->
+      <div class="project">
+        <h3 class="project-title">OmegleClone</h3>
+        <p class="project-description">
+          Open-source random video chat app inspired by Omegle, featuring real-time video calls and text chats.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Socket.IO</span>
+          <span class="tech-tag">WebRTC</span>
+          <span class="tech-tag">Express.js</span>
+          <span class="tech-tag">Redis</span>
+          <span class="tech-tag">AWS</span>
+          <span class="tech-tag">Nginx</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/rohitsx/omegleClone" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+
+      <!-- Web3 Wallet -->
+      <div class="project">
+        <h3 class="project-title">Web3 Wallet</h3>
+        <p class="project-description">
+          A user-friendly crypto wallet supporting Solana and Ethereum blockchains.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">TypeScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://wallet.devrohit.tech/" target="_blank" class="project-link">
+            <i class="fas fa-external-link-alt"></i> Live Demo
+          </a>
+          <a href="https://github.com/rohitsx/web3-wallet" target="_blank" class="project-link">
+            <i class="fab fa-github"></i> Source Code
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Rohit Bind. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
